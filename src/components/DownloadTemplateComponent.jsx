@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 
-const DOWNLOAD_URL = 'http://localhost:8080/template';
+const DOWNLOAD_URL = 'https://generation-gia-doc.onrender.com/template';
 const TEMPLATE_FILE_NAME = "Данные о ВКР студентов.xlsx";
 
 const DownloadTemplateComponent = () => {
