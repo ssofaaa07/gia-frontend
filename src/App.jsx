@@ -38,7 +38,6 @@ function App() {
         ) : (
           <div className="tab-content">
             <div className="supply">
-              <DownloadTemplateMarkComponent />
               <GenerationResultFormComponent />
             </div>
           </div>

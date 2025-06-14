@@ -76,7 +76,7 @@ const GenerationResultFormComponent = () => {
             <div className="form-input-box">
             <form className="form-input" onSubmit={handleSubmit}>
                     <UnloadInfoComponent
-                        title={'2. Прикрепите файл с результатами ГИА:'}
+                        title={'Прикрепите файл с результатами ГИА:'}
                         onFileChange={(e) => setFile(e.target.files[0])}
                         onDeclineNamesChange={(value) => setDeclineNames(value)}
                     />
