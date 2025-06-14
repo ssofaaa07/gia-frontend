@@ -22,6 +22,7 @@ const GenerationResultFormComponent = () => {
     const [file, setFile] = useState(null);
     const [schedule, setSchedule] = useState({ date: '', start: '', end: '', orderNumber: '', orderDate: ''})
     const [error, setError] = useState(null);
+    const [declineNames, setDeclineNames] = useState(false);
 
     const handleSetDefaults = () => {
         setSchedule(DEFAULT_VALUES.schedule);
@@ -34,6 +35,7 @@ const GenerationResultFormComponent = () => {
         formData.append('file', file);
         formData.append('data', JSON.stringify({
             schedule,
+            declineNames
         }));
 
         try {
